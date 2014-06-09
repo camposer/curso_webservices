@@ -1,11 +1,10 @@
 Curso de Web Services
 =====================
 
-Enlaces
-=======
+Enlaces:
 
-Tutorial de Web Services W3Schools
+- Tutorial de Web Services W3Schools
 http://www.w3schools.com/Webservices/default.asp
 
-Documentación de Apache CXF (en)
+- Documentación de Apache CXF (en)
 http://cxf.apache.org/docs/
