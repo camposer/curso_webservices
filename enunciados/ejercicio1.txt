@@ -1,0 +1,15 @@
+1.- Implementar un servicio web de Calculadora de números decimales (float) que ofrezca las siguientes operaciones:
+	float sumar(float a, float b);
+	float restar(float a, float b);
+	float multiplicar(float a, float b)
+	float dividir(float a, float b)
+
+Una vez desplegado el servicio con Apache CXF, probar con el tester de Eclipse (Run -> Web Service Explorer).
+
+NOTA: Basta con agregar las anotaciones @WebService a la SEInterface y el SEImplementation
+
+---
+
+2.- Utilizando anotaciones, alterar el WSDL resultante para cambiar:
+- TargetNamespace del WSDL
+- 
