@@ -20,5 +20,6 @@ NOTA: Basta con agregar las anotaciones @WebService a la SEInterface y el SEImpl
 - TargetNamespace del WSDL
 - WebParam
 - OperationName
+- Cambiar y ver la diferencia entre estilo de Binding RPC y Document
 
 

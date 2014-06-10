@@ -14,11 +14,13 @@ http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
 	<!-- END: Importando clases del BUS -->
 
 	<!-- BEGIN: Servicios SOAP -->
-	<!-- http://localhost:8080/Calculadora/service/HolaMundo -->
+	<!-- http://localhost:8080/Calculadora/service/HolaMundoService -->
 	<jaxws:endpoint
-		id="holaMundo"
-		implementor="service.HolaMundo"
+		implementor="service.HolaMundoImpl"
 		address="/HolaMundo" />
 
+	<jaxws:endpoint
+		implementor="service.CalculadoraImpl"
+		address="/Calculadora" />
 	<!-- END: Servicios SOAP -->
 </beans>
