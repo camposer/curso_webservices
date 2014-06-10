@@ -6,6 +6,13 @@
 
 Una vez desplegado el servicio con Apache CXF, probar con el tester de Eclipse (Run -> Web Service Explorer).
 
+Pasos:
+	- Crear la SEI
+	- Crear la Implementación de la SEI
+	- Configurar el Endpoint en el fichero WEB-INF/cxf-web.xml
+	- Levantar el contenedor web
+	- Probar el servicio
+
 NOTA: Basta con agregar las anotaciones @WebService a la SEInterface y el SEImplementation
 
 ---

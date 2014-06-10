@@ -29,12 +29,13 @@
 			<artifactId>cxf-rt-transports-http</artifactId>
 			<version>${cxf.version}</version>
 		</dependency>
+		<!-- END: CXF -->
+
 		<dependency><!-- Permite producir y consumir JSON (para JAX-RS) -->
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-jaxrs</artifactId>
 			<version>${jackson-jaxrs.version}</version>
 		</dependency>
-		<!-- END: CXF -->
 
 		<!-- BEGIN: Spring -->
 		<dependency>
