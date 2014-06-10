@@ -57,7 +57,7 @@
 	</wsdl:binding>
 	<wsdl:service name="HolaMundoService">
 		<wsdl:port binding="tns:HolaMundoServiceSoapBinding" name="HolaMundoPort">
-			<soap:address location="http://localhost:8080/Calculadora/service/HolaMundo" />
+			<soap:address location="http://localhost:1234/Calculadora/service/HolaMundo" />
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
