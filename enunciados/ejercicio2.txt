@@ -1,0 +1,10 @@
+1.- Implementar una aplicación de consola que presente un menú donde pregunte la operación matemática a realizar:
+
+	1. Sumar
+	2. Restar
+	3. Multiplicar
+	4. Dividir
+	5. Salir
+	? 
+
+Al introducir cualquiera de las opciones deberá solicitar los parámetros necesarios, llamar al Servicio Web correspondiente,  retornar el valor en pantalla y volver al menú inicial.
