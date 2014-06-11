@@ -14,7 +14,7 @@ http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
 	<!-- END: Importando clases del BUS -->
 
 	<context:annotation-config/><!-- Habilita las anotaciones -->
-	<context:component-scan base-package="service"/>
+	<context:component-scan base-package="service,dao"/>
 	
 	<!-- BEGIN: Servicios SOAP -->
 	<!-- http://localhost:8080/Calculadora/service/HolaMundoService -->
@@ -25,5 +25,9 @@ http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
 	<jaxws:endpoint
 		implementor="ws.CalculadoraImpl"
 		address="/Calculadora" />
+
+	<jaxws:endpoint
+		implementor="ws.PersonaWsImpl"
+		address="/Persona" />
 	<!-- END: Servicios SOAP -->
 </beans>
