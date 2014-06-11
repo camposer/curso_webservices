@@ -27,6 +27,7 @@ public class CalculadoraClient {
 			System.out.println("3. Multiplicar");
 			System.out.println("4. Dividir");
 			System.out.println("5. Salir");
+			System.out.print("?");
 			String opcion = scanner.nextLine();
 			
 			if (opcion.equals("1") || opcion.equals("2") ||
@@ -40,9 +41,9 @@ public class CalculadoraClient {
 	}
 	
 	private void pedirDatos(String opcion) {
-		System.out.println("a?");
+		System.out.print("a?");
 		Float a = Float.parseFloat(scanner.nextLine());
-		System.out.println("b?");
+		System.out.print("b?");
 		Float b = Float.parseFloat(scanner.nextLine());
 		
 		if (opcion.equals("1"))

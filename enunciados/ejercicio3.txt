@@ -1,0 +1,19 @@
+1.- Implementar un servicio web que ofrezca las siguientes operaciones sobre una entidad Persona:
+
+	- agregar
+	- modificar
+	- eliminar
+	- obtener
+	- obtenerTodos
+
+Se debe plantear una arquitectura N-Capas orientada a servicios (como en el ejemplo de Calculadora).
+
+La capa de acceso a datos (DAO) deberá implementarse con objetos dummy[1].
+
+La entidad Persona deberá tener al menos lo siguientes datos: nombre, apellido, fecha de nacimiento y altura.
+
+[1] https://github.com/camposer/curso_testing/blob/master/Testing/testing/src/main/java/com/example/testing/dao/LibroDummyDao.java
+
+---
+
+2.- Implementar un cliente de consola que permita utilizar todas las operaciones del servicio web.
