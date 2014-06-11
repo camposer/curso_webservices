@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlElement;
 		targetNamespace="http://demo.com/ws"
 		)
 //@SOAPBinding(style=Style.RPC, use=Use.ENCODED)
-public interface Calculadora {
+public interface CalculadoraWs {
 	@WebMethod(operationName="sum")
 	public Float sumar(
 		@WebParam(name="a") 

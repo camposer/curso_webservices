@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import ws.Calculadora;
+import ws.CalculadoraWs;
 
 public class CalculadoraClient {
 	private Scanner scanner;
-	private Calculadora calculadoraClient;
+	private CalculadoraWs calculadoraClient;
 
 	@SuppressWarnings("resource")
 	public CalculadoraClient() {
 		scanner = new Scanner(System.in);
 		calculadoraClient = 
 				new ClassPathXmlApplicationContext("config/applicationContext.xml")
-					.getBean("calculadoraClient", Calculadora.class);
+					.getBean("calculadoraClient", CalculadoraWs.class);
 			
 	}
 	
@@ -27,7 +27,7 @@ public class CalculadoraClient {
 			System.out.println("3. Multiplicar");
 			System.out.println("4. Dividir");
 			System.out.println("5. Salir");
-			System.out.print("?");
+			System.out.print("? ");
 			String opcion = scanner.nextLine();
 			
 			if (opcion.equals("1") || opcion.equals("2") ||
@@ -41,9 +41,9 @@ public class CalculadoraClient {
 	}
 	
 	private void pedirDatos(String opcion) {
-		System.out.print("a?");
+		System.out.print("a? ");
 		Float a = Float.parseFloat(scanner.nextLine());
-		System.out.print("b?");
+		System.out.print("b? ");
 		Float b = Float.parseFloat(scanner.nextLine());
 		
 		if (opcion.equals("1"))

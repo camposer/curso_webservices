@@ -7,11 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import service.CalculadoraService;
 
 @WebService(
-		endpointInterface="ws.Calculadora", 
-		serviceName="CalculadoraService",
+		endpointInterface="ws.CalculadoraWs", 
+		serviceName="CalculadoraWs",
 		targetNamespace="http://demo.com/ws"
 	)
-public class CalculadoraImpl implements Calculadora {
+public class CalculadoraWsImpl implements CalculadoraWs {
 	@Autowired
 	private CalculadoraService calculadoraService;
 	

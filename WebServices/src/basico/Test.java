@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		IUno uno = UnoFactory.createUno();
 		uno.imprimir();

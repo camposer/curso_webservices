@@ -17,13 +17,13 @@ http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
 	<context:component-scan base-package="service,dao"/>
 	
 	<!-- BEGIN: Servicios SOAP -->
-	<!-- http://localhost:8080/Calculadora/service/HolaMundoService -->
+	<!-- http://localhost:8080/WebServices/service/ -->
 	<jaxws:endpoint
-		implementor="ws.HolaMundoImpl"
+		implementor="ws.HolaMundoWsImpl"
 		address="/HolaMundo" />
 
 	<jaxws:endpoint
-		implementor="ws.CalculadoraImpl"
+		implementor="ws.CalculadoraWsImpl"
 		address="/Calculadora" />
 
 	<jaxws:endpoint
