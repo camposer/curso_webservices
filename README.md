@@ -35,4 +35,13 @@ http://docs.oracle.com/javaee/5/api/javax/xml/ws/package-tree.html
 - Tutorial de Apache CXF (JAX-WS)
 http://cxf.apache.org/docs/developing-a-service.html
 
+- JAXB-WS - Making a field mandatory using @WebMethod
+http://stackoverflow.com/questions/12642335/jaxb-ws-making-a-field-mandatory-using-webmethod
+
+- Mocks Aren't Stubs
+http://martinfowler.com/articles/mocksArentStubs.html
+
+- SOA
+http://en.wikipedia.org/wiki/Service-oriented_architecture
+(ver principios)
 

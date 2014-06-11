@@ -12,6 +12,10 @@ http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
 	<bean id="uno" class="basico.Uno"/>
 	
 	<jaxws:client id="holaMundoClient" 
-		serviceClass="service.HolaMundo"
+		serviceClass="ws.HolaMundo"
 		address="http://localhost:8080/Calculadora/service/HolaMundo"/>
+
+	<jaxws:client id="calculadoraClient" 
+		serviceClass="ws.Calculadora"
+		address="http://localhost:8080/Calculadora/service/Calculadora"/>
 </beans>

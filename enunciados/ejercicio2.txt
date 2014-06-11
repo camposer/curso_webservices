@@ -8,3 +8,6 @@
 	? 
 
 Al introducir cualquiera de las opciones deberá solicitar los parámetros necesarios, llamar al Servicio Web correspondiente,  retornar el valor en pantalla y volver al menú inicial.
+
+Scanner scanner = new Scanner(System.in);
+String linea = scanner.nextLine(); // => Texto introducido por el usuario

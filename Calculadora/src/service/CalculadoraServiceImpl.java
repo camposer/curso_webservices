@@ -1,13 +1,9 @@
 package service;
 
-import javax.jws.WebService;
+import org.springframework.stereotype.Service;
 
-@WebService(
-		endpointInterface="service.Calculadora", 
-		serviceName="CalculadoraService",
-		targetNamespace="http://demo.com/ws"
-	)
-public class CalculadoraImpl implements Calculadora {
+@Service
+public class CalculadoraServiceImpl implements CalculadoraService {
 
 	@Override
 	public Float sumar(Float a, Float b) {
@@ -16,6 +12,7 @@ public class CalculadoraImpl implements Calculadora {
 
 	@Override
 	public Float restar(Float a, Float b) {
+		// TODO Auto-generated method stub
 		return a - b;
 	}
 
@@ -28,5 +25,5 @@ public class CalculadoraImpl implements Calculadora {
 	public Float multiplicar(Float a, Float b) {
 		return a * b;
 	}
-	
+
 }
