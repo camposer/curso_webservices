@@ -60,7 +60,7 @@
 	<wsdl:service name="HolaMundoService"><!-- Opcional -->
 		<wsdl:port binding="impl:HolaMundoSoapBinding" name="HolaMundo">
 			<wsdlsoap:address
-				location="http://localhost:8080/WebServiceProject/services/HolaMundo" />
+				location="http://localhost:8080/HolaMundoProject/services/HolaMundo" />
 		</wsdl:port>
 	</wsdl:service>
 
