@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import ws.CalculadoraWs;
+import ws.CalculadoraSoap;
 
 public class CalculadoraClient {
 	private Scanner scanner;
-	private CalculadoraWs calculadoraClient;
+	private CalculadoraSoap calculadoraClient;
 
 	@SuppressWarnings("resource")
 	public CalculadoraClient() {
 		scanner = new Scanner(System.in);
 		calculadoraClient = 
 				new ClassPathXmlApplicationContext("config/applicationContext.xml")
-					.getBean("calculadoraClient", CalculadoraWs.class);
+					.getBean("calculadoraClient", CalculadoraSoap.class);
 			
 	}
 	

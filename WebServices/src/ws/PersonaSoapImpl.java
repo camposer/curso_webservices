@@ -4,14 +4,14 @@ import java.util.List;
 
 import javax.jws.WebService;
 
-import ws.PersonaWs;
+import ws.PersonaSoap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import service.PersonaService;
 
-@WebService(endpointInterface="ws.PersonaWs")
-public class PersonaWsImpl implements PersonaWs {
+@WebService(endpointInterface="ws.PersonaSoap")
+public class PersonaSoapImpl implements PersonaSoap {
 	@Autowired
 	private PersonaService personaService;
 

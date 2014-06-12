@@ -6,6 +6,6 @@ import javax.jws.WebService;
  * Indica a CXF cómo es el servicio (para crear WSDL)
  */
 @WebService
-public interface HolaMundoWs {
+public interface HolaMundoSoap {
 	public String saludar(String nombre);
 }
