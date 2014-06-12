@@ -3,7 +3,9 @@ package model;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.activation.DataHandler;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlMimeType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
@@ -24,6 +26,7 @@ public class Persona implements Serializable {
 	private String apellido;
 	private Date fechaNacimiento;
 	private Float altura;
+	private DataHandler avatar;
 	
 	public Integer getId() {
 		return id;
@@ -57,5 +60,18 @@ public class Persona implements Serializable {
 	}
 	public void setAltura(Float altura) {
 		this.altura = altura;
+	}
+	@XmlMimeType("application/octet-stream") // Imágenes, PDF, Audio (media en general)
+	public DataHandler getAvatar() {
+		return avatar;
+	}
+	public void setAvatar(DataHandler avatar) {
+		this.avatar = avatar;
+	}
+	@Override
+	public String toString() {
+		return "Persona [id=" + id + ", nombre=" + nombre + ", apellido="
+				+ apellido + ", fechaNacimiento=" + fechaNacimiento
+				+ ", altura=" + altura + ", avatar=" + avatar + "]";
 	}
 }

@@ -28,6 +28,17 @@ http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
 
 	<jaxws:endpoint
 		implementor="ws.PersonaWsImpl"
-		address="/Persona" />
+		address="/Persona">
+		
+		<jaxws:properties>
+			<entry key="mtom-enabled" value="true"/>
+		</jaxws:properties>
+	</jaxws:endpoint>
 	<!-- END: Servicios SOAP -->
 </beans>
+
+
+
+
+
+

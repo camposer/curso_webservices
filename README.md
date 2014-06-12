@@ -57,4 +57,8 @@ http://stackoverflow.com/questions/15480632/whats-the-difference-between-mtom-an
 - Using MTOM with Apache CXF
 http://cxf.apache.org/docs/mtom.html
 
+- CXF Interceptor example: how to get HTTP Headers in CXF
+http://www.asjava.com/web-services/cxf-interceptor-read-http-header/
+
+
 
