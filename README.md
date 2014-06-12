@@ -26,8 +26,11 @@ http://cxf.apache.org/docs/
 - Estilos de mensajes SOAP (binding)
 http://www.ibm.com/developerworks/library/ws-whichwsdl/
 
-- Documentación de JAX-WS (en)
+- Especificación de JAX-WS (en)
 https://jcp.org/en/jsr/detail?id=224
+
+- Especificación de JAX-RS (en)
+https://jcp.org/en/jsr/detail?id=311
 
 - API de JAX-WS
 http://docs.oracle.com/javaee/5/api/javax/xml/ws/package-tree.html
