@@ -45,3 +45,16 @@ http://martinfowler.com/articles/mocksArentStubs.html
 http://en.wikipedia.org/wiki/Service-oriented_architecture
 (ver principios)
 
+- SAAJ
+http://en.wikipedia.org/wiki/SOAP_with_Attachments_API_for_Java
+
+- MTOM
+http://en.wikipedia.org/wiki/Message_Transmission_Optimization_Mechanism
+
+- SAAJ vs MTOM
+http://stackoverflow.com/questions/15480632/whats-the-difference-between-mtom-and-the-attachment-features-provided-by-saaj
+
+- Using MTOM with Apache CXF
+http://cxf.apache.org/docs/mtom.html
+
+
