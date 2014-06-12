@@ -16,7 +16,8 @@ import adapter.DateAdapter;
 		"nombre", 
 		"apellido", 
 		"fechaNacimiento",
-		"altura"
+		"altura",
+		"avatar"
 	})
 public class Persona implements Serializable {
 	private static final long serialVersionUID = 6704642679088438716L;
