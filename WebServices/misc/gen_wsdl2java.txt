@@ -1,0 +1,5 @@
+# Genera código Java desde el WSDL (cliente y servidor)
+./wsdl2java -d calculadora -client -server -impl http://localhost:8080/WebServices/service/Calculadora?wsdl
+
+# Genera código JS desde el WSDL
+./wsdl2js -d calculadora/ http://localhost:8080/WebServices/service/Calculadora?wsdl

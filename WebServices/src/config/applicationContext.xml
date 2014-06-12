@@ -22,5 +22,16 @@ http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
 	<jaxws:client id="personaClient" 
 		serviceClass="ws.PersonaSoap"
 		address="http://localhost:8080/WebServices/service/Persona"/>
+		
+	<bean id="jsonProvider" class="org.codehaus.jackson.jaxrs.JacksonJsonProvider" />
+		
+	<jaxrs:client id="personaRestClient"
+		serviceClass="ws.PersonaRest"
+		address="http://localhost:8080/WebServices/service/personas">
+		
+		<jaxrs:providers>
+			<ref bean='jsonProvider' />
+		</jaxrs:providers>
+	</jaxrs:client>
 
 </beans>

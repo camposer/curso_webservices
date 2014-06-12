@@ -33,7 +33,7 @@ http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
 	<!-- END: Servicios SOAP -->
 
 	<!-- BEGIN: Servicios REST -->
-	<bean id="personaRest" class="ws.PersonaRest"/>
+	<bean id="personaRest" class="ws.PersonaRestImpl"/>
 
 	<bean id="jsonProvider" class="org.codehaus.jackson.jaxrs.JacksonJsonProvider" />
 

@@ -13,18 +13,12 @@ import javax.ws.rs.Produces;
 
 import model.Persona;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
-import service.PersonaService;
-
 @Consumes("application/json")
 @Produces("application/json") // Esto es posible porque tenemos la dependencia de Jackson
-public class PersonaRest {
-	@Autowired
-	private PersonaService personaService;
-	
+public interface PersonaRest {
 	/**
 	 * POST /personas/
+	 * Content-type: application/json
 	 * 
 	 * Por ejemplo:
 	 * 
@@ -33,12 +27,11 @@ public class PersonaRest {
 	 */
 	@POST
 	@Path("")
-	public void agregarPersona(Persona persona) {
-		personaService.agregarPersona(persona);
-	}
+	public void agregarPersona(Persona persona);
 	
 	/**
 	 * PUT /personas/{id}
+	 * Content-type: application/json
 	 * 
 	 * Por ejemplo:
 	 * 
@@ -49,10 +42,7 @@ public class PersonaRest {
 	@Path("/{id}")
 	public void modificarPersona(
 			@PathParam("id") Integer id, 
-			Persona persona) {
-		
-		personaService.modificarPersona(persona);
-	}
+			Persona persona);
 
 	/**
 	 * DELETE /personas/{id}
@@ -63,9 +53,7 @@ public class PersonaRest {
 	 */
 	@DELETE
 	@Path("/{id}")
-	public void eliminarPersona(@PathParam("id") Integer id) {
-		personaService.eliminarPersona(id);
-	}
+	public void eliminarPersona(@PathParam("id") Integer id);
 	
 	/**
 	 * GET /personas/{id}
@@ -76,9 +64,7 @@ public class PersonaRest {
 	 */
 	@GET
 	@Path("/{id}")
-	public Persona obtenerPersona(@PathParam("id") Integer id) {
-		return personaService.obtenerPersona(id);
-	}
+	public Persona obtenerPersona(@PathParam("id") Integer id);
 	
 	/**
 	 * GET /personas
@@ -89,7 +75,5 @@ public class PersonaRest {
 	 */
 	@GET
 	@Path("")
-	public List<Persona> obtenerPersonas() {
-		return personaService.obtenerPersonas();
-	}
+	public List<Persona> obtenerPersonas();
 }

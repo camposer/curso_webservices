@@ -13,20 +13,20 @@ import model.Persona;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import ws.PersonaSoap;
+import ws.PersonaRest;
 
-public class PersonaClient {
+public class PersonaRestClient {
 	private static final String AGREGAR = "AGREGAR";
 	private static final String MODIFICAR = "MODIFICAR";
 	private Scanner scanner;
-	private PersonaSoap personaClient;
+	private PersonaRest personaClient;
 
 	@SuppressWarnings("resource")
-	public PersonaClient() {
+	public PersonaRestClient() {
 		scanner = new Scanner(System.in);
 		personaClient = 
 				new ClassPathXmlApplicationContext("config/applicationContext.xml")
-					.getBean("personaClient", PersonaSoap.class);
+					.getBean("personaRestClient", PersonaRest.class);
 			
 	}
 	
@@ -116,11 +116,11 @@ public class PersonaClient {
 		if (operacion.equals(AGREGAR))
 			personaClient.agregarPersona(p);
 		else
-			personaClient.modificarPersona(p);
+			personaClient.modificarPersona(p.getId(), p);
 	}
 
 	public static void main(String[] args) throws Exception {
-		new PersonaClient().iniciar();
+		new PersonaRestClient().iniciar();
 	}
 
 }
