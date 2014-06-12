@@ -60,5 +60,11 @@ http://cxf.apache.org/docs/mtom.html
 - CXF Interceptor example: how to get HTTP Headers in CXF
 http://www.asjava.com/web-services/cxf-interceptor-read-http-header/
 
+- REST
+http://es.wikipedia.org/wiki/Representational_State_Transfer
 
+- Artículo con ejemplo de aplicación RESTful
+http://camposer-alt.blogspot.com.es/2012/08/rest-express-examplessqlite.html
 
+- Ejemplo de aplicación RESTful con Spring MVC
+https://github.com/camposer/curso_pr_js
